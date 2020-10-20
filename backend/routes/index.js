@@ -22,7 +22,7 @@ router.get('/portfolio/tags', (req, res, next) => {
 });
 
 router.get('/portfolio/:id', (req, res, next) => {
-  dribbleController.getImageById(req,data => {
+  dribbleController.getImageById(req, data => {
     res
       .json(data)
       .status(200)
