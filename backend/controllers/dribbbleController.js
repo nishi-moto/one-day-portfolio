@@ -45,7 +45,7 @@ async function getImageById(req, callback) {
   await fetch(apiUrl)
     .then(res => res.json())
     .then(data => data.filter(shot => Number(shot.id) === Number(req.params.id))[0])
-    .then(data => callback(data));;
+    .then(data => callback(data));
 }
 
 module.exports = {
